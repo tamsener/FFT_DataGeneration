@@ -189,7 +189,7 @@ TKE.calculate_tke(probe)
 print(type(TKE.TKE))
 
 # Energy density spectrum calculation and ploting
-frequency, time, Energy = signal.spectrogram(TKE.TKE, 1)
+frequency, time, Energy = signal.spectrogram(TKE.TKE, 1E6)
 plt.semilogy(frequency, Energy)
 plt.title('Energy Spectrum')
 plt.xlabel('frequency [Hz]')
